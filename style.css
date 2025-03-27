@@ -13,7 +13,7 @@ h1 {
   background: white;
   padding: 20px;
   margin: 20px auto;
-  max-width: 400px;
+  max-width: 500px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -22,16 +22,50 @@ h1 {
   margin-bottom: 15px;
 }
 
+.subject label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+/* Paper Tracking Section */
+.papers {
+  margin-top: 15px;
+}
+
+.papers h3 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.papers h4 {
+  margin-top: 15px;
+  color: #555;
+  text-decoration: underline;
+}
+
 .papers button {
   margin: 5px;
-  padding: 10px;
+  padding: 10px 15px;
   border: none;
   background: #3498db;
   color: white;
   cursor: pointer;
   border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
 .papers button:hover {
   background: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .user-section {
+    max-width: 90%;
+  }
 }
