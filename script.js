@@ -1,4 +1,4 @@
-const SHEET_URL = https://script.google.com/macros/s/AKfycbyxb1j2fkj78DsMB7gBuCKsCiz446BdIyph8vwOa8-vuGZKY7qtKr2TFZaOdFhk7jRy/exec; // Replace with your Web App URL
+const SHEET_URL = https://script.google.com/macros/s/AKfycbxPjhCH6smctQ9XB5PWcfwwHRrOcGAZuDaxT4yecX6pNDLH0VIzBaFBlz_1RUHSn4WF/exec; // Replace with your Web App URL
 
 async function loadProgress() {
     let response = await fetch(SHEET_URL);
