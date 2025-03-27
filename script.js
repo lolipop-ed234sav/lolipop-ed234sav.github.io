@@ -22,17 +22,11 @@ function loadProgress() {
     let elements = [
         "math1", "physics1", "chemistry1",
         "math2", "physics2", "chemistry2",
-        "paper1a1", "paper1b1", "paper21",
-        "paper1a2", "paper1b2", "paper22"
+        "paper1a1", "paper1b1", "paper2a1", // Fixed "paper21" to "paper2a1"
+        "paper1a2", "paper1b2", "paper2a2" // Fixed "paper22" to "paper2a2"
     ];
 
     elements.forEach(id => {
         let savedValue = localStorage.getItem(id);
         if (savedValue !== null) {
-            document.getElementById(id).textContent = savedValue;
-            if (document.querySelector(`input[oninput*="${id}"]`)) {
-                document.querySelector(`input[oninput*="${id}"]`).value = savedValue;
-            }
-        }
-    });
-}
+            document.getElementById(id).
